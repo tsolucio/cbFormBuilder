@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<schema>
+	<tables>
+		<table>
+			<name>vtiger_cbformbuilder</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_cbformbuilder` (
+  `cbformbuilderid` int(11) NOT NULL,
+  `formname` varchar(120),
+  `cbformbuilderno` varchar(100) NOT NULL,
+  `menulabel` varchar(120) default NULL,
+  `menuurl` varchar(220) default NULL,
+  `rolepermission` varchar(250) default NULL,
+  `mainmodule` varchar(150) default NULL,
+  `forallusers` char(50) default NULL,
+  `parentmodule` varchar(150),
+  `formmode` varchar(50) default 'Master',
+  `referencefield` varchar(150) default NULL,
+  `stepmode` varchar(50) default 'Block',
+  PRIMARY KEY (`cbformbuilderid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+		<table>
+			<name>vtiger_cbformbuildercf</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_cbformbuildercf` (
+  `cbformbuilderid` int(11) NOT NULL,
+  PRIMARY KEY (`cbformbuilderid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+	</tables>
+</schema>
