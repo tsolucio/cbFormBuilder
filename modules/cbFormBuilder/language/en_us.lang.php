@@ -28,6 +28,5 @@ $mod_strings = array(
 	'Modified Time' => 'Modified Time',
 	'Description' => 'Description',
 	'LBL_DESCRIPTION_INFORMATION' => 'Description Information'
-
 );
 ?>
